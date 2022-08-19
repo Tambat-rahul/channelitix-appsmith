@@ -7,8 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "https://2df0-182-48-242-78.ngrok.io"
+        "url": "https://4c6d-182-48-249-197.ngrok.io"
       },
       "invalids": [],
       "messages": [],
