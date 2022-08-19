@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "updation_success",
+    "pageId": "main",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tupdation: () => {\n\t\tFetch_Targets.run();\n\t\tshowAlert(\"Record Updated Successfully\",\"success\");\n\t}\n}",
+    "variables": []
+  },
+  "id": "main_updation_success",
+  "deleted": false,
+  "gitSyncId": "62fa1f3184757e0c05541543_62fe098e84757e0c05553c37"
+}

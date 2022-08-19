@@ -1,0 +1,25 @@
+{
+  "pages": [
+    {
+      "id": "main",
+      "isDefault": false
+    },
+    {
+      "id": "products",
+      "isDefault": false
+    },
+    {
+      "id": "home_page",
+      "isDefault": true
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#D9E7FF",
+  "icon": "rupee",
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}
