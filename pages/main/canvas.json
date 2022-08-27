@@ -676,7 +676,7 @@
                           "discardButtonVariant": "TERTIARY",
                           "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
                           "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
-                          "onSave": "{{Update_Record.run(() => {Fetch_Targets.run();showAlert(\"Targets Updated Successfully\")}, () => showAlert('Records Not Updated','error'))}}",
+                          "onSave": "{{Update_Record.run(() => {Fetch_Targets.run();showAlert(\"Targets Updated Successfully\",\"success\")}, () => showAlert('Records Not Updated','error'))}}",
                           "onDiscard": ""
                         }
                       },
@@ -733,7 +733,7 @@
                       ],
                       "isDisabled": false,
                       "key": "kut12c9dbm",
-                      "onFilesSelected": "{{Upload_target.run(() => showAlert('Targets Updated Succesfully','success'), () => Fetch_Targets.run(), () => showAlert('Targets Not Updated','error'))}}",
+                      "onFilesSelected": "{{Upload_target.run(() =>{Fetch_Targets.run(); showAlert('Targets Updated Succesfully','success')},() => Fetch_Targets.run(), () => showAlert('Targets Not Updated','error'))}}",
                       "isRequired": false,
                       "isDeprecated": false,
                       "rightColumn": 50,
