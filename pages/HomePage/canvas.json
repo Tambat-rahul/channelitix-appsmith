@@ -210,7 +210,7 @@
               "name": "storeAuthToken.myFun2",
               "collectionId": "HomePage_storeAuthToken",
               "clientSideExecution": true,
-              "confirmBeforeExecute": true,
+              "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  let authTokenValue = appsmith.URL.queryParams.authToken;\n  storeValue(\"authToken\", authTokenValue);\n  navigateTo('main', {});\n}"

@@ -37,7 +37,7 @@
       "async () => {\n  let authTokenValue = appsmith.URL.queryParams.authToken;\n  storeValue(\"authToken\", authTokenValue);\n  navigateTo('main', {});\n}"
     ],
     "userSetOnLoad": true,
-    "confirmBeforeExecute": true,
+    "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
