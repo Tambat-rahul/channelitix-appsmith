@@ -676,7 +676,7 @@
                           "discardButtonVariant": "TERTIARY",
                           "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
                           "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
-                          "onSave": "{{Update_Record.run(() => {Fetch_Targets.run();showAlert(\"Targets Updated Successfully\",\"success\")}, () => showAlert('Records Not Updated','error'))}}",
+                          "onSave": "{{Update_Record.run(() => {Fetch_Targets.run();showAlert(\"Targets Updated Successfully\",\"success\")}, () => showAlert(Update_Record.data.errors.message,'error'))}}",
                           "onDiscard": ""
                         }
                       },
@@ -979,7 +979,7 @@
               "widgetId": "jotqimdgo2",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "{{appsmith.store.authToken?\"Tab 1\": \"Tab 2\"}}",
-              "shouldShowTabs": false,
+              "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
                   "label": "Tab 1",
