@@ -733,7 +733,7 @@
                       ],
                       "isDisabled": false,
                       "key": "kut12c9dbm",
-                      "onFilesSelected": "{{Upload_target.run(() =>{Fetch_Targets.run(); showAlert('Targets Updated Succesfully','success')},() => Fetch_Targets.run(), () => showAlert('Targets Not Updated','error'))}}",
+                      "onFilesSelected": "{{Upload_target.run(() =>{showAlert('Targets Updated Successfully','success');Fetch_Targets.run()}, () => showAlert('Targets Not Updated','error'))}}",
                       "isRequired": false,
                       "isDeprecated": false,
                       "rightColumn": 50,
