@@ -155,7 +155,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "{{appsmith.store.authTokenValue}}",
+                      "text": "{{appsmith.URL.queryParams.authToken}}",
                       "key": "mz5n3y6gws",
                       "isDeprecated": false,
                       "rightColumn": 41,
