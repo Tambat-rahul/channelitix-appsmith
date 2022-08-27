@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "myFun2",
-    "fullyQualifiedName": "JSObject1.myFun2",
+    "fullyQualifiedName": "storeAuthToken.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,13 +13,13 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "home_page",
-    "collectionId": "home_page_JSObject1",
+    "pageId": "HomePage",
+    "collectionId": "HomePage_storeAuthToken",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  var authTokenEncode = appsmith.URL.queryParams.clicker;\n  storeValue(\"authToken\", authTokenEncode);\n  {\n    {\n      navigateTo('main', {});\n    }\n  }\n}",
+      "body": "async () => {\n  let authTokenValue = appsmith.URL.clicker;\n  storeValue(\"authToken\", authTokenValue);\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  var authTokenEncode = appsmith.URL.queryParams.clicker;\n  storeValue(\"authToken\", authTokenEncode);\n  {\n    {\n      navigateTo('main', {});\n    }\n  }\n}"
+      "async () => {\n  let authTokenValue = appsmith.URL.clicker;\n  storeValue(\"authToken\", authTokenValue);\n}"
     ],
     "userSetOnLoad": true,
-    "confirmBeforeExecute": false,
+    "confirmBeforeExecute": true,
     "policies": [],
     "userPermissions": []
   },
-  "id": "home_page_JSObject1.myFun2",
+  "id": "HomePage_storeAuthToken.myFun2",
   "deleted": false,
-  "gitSyncId": "62fa1f3184757e0c05541543_62fc9fa584757e0c0554d3c2"
+  "gitSyncId": "62fa1f3184757e0c05541543_6309c59b8faf1771c76b92c3"
 }
