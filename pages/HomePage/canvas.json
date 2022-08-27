@@ -213,7 +213,7 @@
               "confirmBeforeExecute": true,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  let authTokenValue = appsmith.URL.queryParams.authToken;\n  storeValue(\"authToken\", authTokenValue);\n}"
+                "async () => {\n  let authTokenValue = appsmith.URL.queryParams.authToken;\n  storeValue(\"authToken\", authTokenValue);\n  navigateTo('main', {});\n}"
               ],
               "timeoutInMillisecond": 10000
             }

@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  let authTokenValue = appsmith.URL.queryParams.authToken;\n  storeValue(\"authToken\", authTokenValue);\n}",
+      "body": "async () => {\n  let authTokenValue = appsmith.URL.queryParams.authToken;\n  storeValue(\"authToken\", authTokenValue);\n  navigateTo('main', {});\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  let authTokenValue = appsmith.URL.queryParams.authToken;\n  storeValue(\"authToken\", authTokenValue);\n}"
+      "async () => {\n  let authTokenValue = appsmith.URL.queryParams.authToken;\n  storeValue(\"authToken\", authTokenValue);\n  navigateTo('main', {});\n}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": true,
