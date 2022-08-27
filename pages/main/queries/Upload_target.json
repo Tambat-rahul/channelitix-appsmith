@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Fetch_Targets",
+    "name": "Upload_target",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -20,42 +20,51 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/api/v3/targets/{{moment(new Date(DatePicker1.formattedDate)).format('YYYYMM')}}",
-      "headers": [],
+      "path": "/api/v3/targets/",
+      "headers": [
+        {
+          "key": "content-type",
+          "value": "multipart/form-data"
+        }
+      ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "bodyFormData": [],
-      "httpMethod": "GET",
+      "body": "",
+      "bodyFormData": [
+        {
+          "key": "file",
+          "value": "{{FilePicker1.files[0]}}",
+          "type": "FILE"
+        }
+      ],
+      "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "multipart/form-data"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "path"
-      },
-      {
-        "key": "datasourceUrl"
+        "key": "bodyFormData[0].value"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "moment(new Date(DatePicker1.formattedDate)).format('YYYYMM')"
+      "FilePicker1.files[0]"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "main_Fetch_Targets",
+  "id": "main_Upload_target",
   "deleted": false,
-  "gitSyncId": "62fa1f3184757e0c05541543_62fb915e84757e0c055486ff"
+  "gitSyncId": "62fa1f3184757e0c05541543_6304d66822c743180839052d"
 }

@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 59,
+          "version": 60,
           "minHeight": 1292,
           "dynamicTriggerPathList": [],
           "parentColumnSpace": 1,
@@ -135,7 +135,7 @@
                       "isLoading": false,
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "buttonVariant": "PRIMARY",
+                      "buttonVariant": "SECONDARY",
                       "placement": "CENTER"
                     },
                     {
@@ -178,7 +178,7 @@
                       "labelPosition": "Left",
                       "isDisabled": false,
                       "key": "a4ex1ymthf",
-                      "onDateSelected": "{{Fetch_Targets.run(() => {}, () => showAlert(Fetch_Targets.data.success))}}",
+                      "onDateSelected": "{{Fetch_Targets.run(() => {}, () => showAlert('Error','error'))}}",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "defaultDate": "2022-08-16T23:34:38.3838+05:30",
@@ -210,9 +210,6 @@
                       "inlineEditingSaveOption": "ROW_LEVEL",
                       "animateLoading": true,
                       "dynamicBindingPathList": [
-                        {
-                          "key": "tableData"
-                        },
                         {
                           "key": "accentColor"
                         },
@@ -296,6 +293,9 @@
                         },
                         {
                           "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "leftColumn": 0,
@@ -498,7 +498,7 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": false,
+                          "isVisible": true,
                           "isDisabled": false,
                           "isCellEditable": false,
                           "isEditable": false,
@@ -603,7 +603,7 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": false,
+                          "isVisible": true,
                           "isDisabled": false,
                           "isCellEditable": false,
                           "isEditable": false,
@@ -673,7 +673,7 @@
                           "discardButtonVariant": "TERTIARY",
                           "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
                           "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
-                          "onSave": "{{Update_Record.run(() => updation_success.updation(), () => showAlert('Record Not Updated','error'))}}",
+                          "onSave": "{{Update_Record.run(() => showAlert('Record Updated Successfully','success'), () => showAlert('Targets Not Updated','error'))}}",
                           "onDiscard": ""
                         }
                       },
@@ -691,6 +691,58 @@
                       "isVisibleSearch": true,
                       "isVisiblePagination": true,
                       "verticalAlignment": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "FilePicker1",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "FilePicker",
+                      "iconSVG": "/static/media/icon.7c5ad9c357928c6ff5701bf51a56c2e5.svg",
+                      "searchTags": [
+                        "upload"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "parentRowSpace": 10,
+                      "allowedFileTypes": [],
+                      "type": "FILE_PICKER_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.75,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onFilesSelected"
+                        }
+                      ],
+                      "leftColumn": 36,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "isDisabled": false,
+                      "key": "kut12c9dbm",
+                      "onFilesSelected": "{{Upload_target.run(() => showAlert('Targets Updated Succesfully','success'), () => showAlert('Targets Not Updated','error'))}}",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 50,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "su91wipjsh",
+                      "isVisible": true,
+                      "label": "Upload File",
+                      "maxFileSize": 5,
+                      "version": 1,
+                      "fileDataType": "Binary",
+                      "parentId": "04b4e2b4au",
+                      "selectedFiles": [],
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "files": [],
+                      "maxNumFiles": 1
                     }
                   ],
                   "isDisabled": false,
