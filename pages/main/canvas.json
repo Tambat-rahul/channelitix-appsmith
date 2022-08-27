@@ -676,7 +676,7 @@
                           "discardButtonVariant": "TERTIARY",
                           "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
                           "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
-                          "onSave": "{{Update_Record.run(() => showAlert('Record Updated Successfully','success'),() => showAlert('Records Not Updated','error'))}}",
+                          "onSave": "{{Update_Record.run(() => {Fetch_Targets.run();showAlert(\"Targets Updated Successfully\")}, () => showAlert('Records Not Updated','error'))}}",
                           "onDiscard": ""
                         }
                       },
