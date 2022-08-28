@@ -751,6 +751,55 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "files": [],
                       "maxNumFiles": 1
+                    },
+                    {
+                      "widgetName": "Text2",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 9.75,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 16,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{appsmith.store.auth_token}}",
+                      "key": "l28vjg6lgk",
+                      "isDeprecated": false,
+                      "rightColumn": 32,
+                      "textAlign": "LEFT",
+                      "widgetId": "ma5qsxr0t1",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "04b4e2b4au",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "1rem"
                     }
                   ],
                   "isDisabled": false,
@@ -978,7 +1027,7 @@
               "rightColumn": 64,
               "widgetId": "jotqimdgo2",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "defaultTab": "{{appsmith.store.authToken?\"Tab 1\": \"Tab 2\"}}",
+              "defaultTab": "{{appsmith.store.auth_token?\"Tab 1\": \"Tab 2\"}}",
               "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
