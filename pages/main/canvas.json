@@ -730,7 +730,7 @@
                       ],
                       "isDisabled": false,
                       "key": "kut12c9dbm",
-                      "onFilesSelected": "{{Upload_target.run(() =>{\nshowAlert('Targets Not Updated','error');Fetch_Targets.run();\n} , () => {})}}",
+                      "onFilesSelected": "{{Upload_target.run(() =>{\nshowAlert('Targets Not Updated','error');Fetch_Targets.run();resetWidget(\"FilePicker1\",true)\n} , () => {})}}",
                       "isRequired": false,
                       "isDeprecated": false,
                       "rightColumn": 50,
