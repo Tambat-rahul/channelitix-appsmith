@@ -730,7 +730,7 @@
                       ],
                       "isDisabled": false,
                       "key": "kut12c9dbm",
-                      "onFilesSelected": "{{Upload_target.run(() => showAlert('Targets Not Updated','error'), () => {})}}",
+                      "onFilesSelected": "{{Upload_target.run(() =>{\nshowAlert('Targets Not Updated','error');Fetch_Targets.run();\n} , () => {})}}",
                       "isRequired": false,
                       "isDeprecated": false,
                       "rightColumn": 50,
@@ -976,7 +976,7 @@
               "widgetId": "jotqimdgo2",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "Tab 1",
-              "shouldShowTabs": true,
+              "shouldShowTabs": false,
               "tabsObj": {
                 "tab1": {
                   "label": "Tab 1",
