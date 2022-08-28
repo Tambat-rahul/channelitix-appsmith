@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "myFun2",
-    "fullyQualifiedName": "storeAuthToken.myFun2",
+    "fullyQualifiedName": "JSObject1.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,13 +13,13 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "HomePage",
-    "collectionId": "HomePage_storeAuthToken",
+    "pageId": "home-page",
+    "collectionId": "home-page_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  let authTokenValue = appsmith.URL.queryParams.authToken;\n  storeValue(\"authToken\", authTokenValue);\n  navigateTo('main', {});\n}",
+      "body": "async () => {\n  let authTokenvalue = localStorage.getItem(\"token\");\n  storeValue(\"token\", authTokenvalue);\n  showAlert(authTokenvalue);\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  let authTokenValue = appsmith.URL.queryParams.authToken;\n  storeValue(\"authToken\", authTokenValue);\n  navigateTo('main', {});\n}"
+      "async () => {\n  let authTokenvalue = localStorage.getItem(\"token\");\n  storeValue(\"token\", authTokenvalue);\n  showAlert(authTokenvalue);\n}"
     ],
     "userSetOnLoad": true,
-    "confirmBeforeExecute": false,
+    "confirmBeforeExecute": true,
     "policies": [],
     "userPermissions": []
   },
-  "id": "HomePage_storeAuthToken.myFun2",
+  "id": "home-page_JSObject1.myFun2",
   "deleted": false,
-  "gitSyncId": "62fa1f3184757e0c05541543_6309c59b8faf1771c76b92c3"
+  "gitSyncId": "62fa1f3184757e0c05541543_630b2db221b73754d5d90a8b"
 }

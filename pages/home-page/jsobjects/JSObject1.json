@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "home-page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyFun2: async () => {\n\t\tlet authTokenvalue = localStorage.getItem(\"token\");\n\t\tstoreValue(\"token\",authTokenvalue);\n\t\tshowAlert(authTokenvalue);\n\t}\n}",
+    "variables": []
+  },
+  "id": "home-page_JSObject1",
+  "deleted": false,
+  "gitSyncId": "62fa1f3184757e0c05541543_630b2db221b73754d5d90a8f"
+}
