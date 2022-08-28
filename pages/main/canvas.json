@@ -52,9 +52,6 @@
                 },
                 {
                   "key": "boxShadow"
-                },
-                {
-                  "key": "defaultTab"
                 }
               ],
               "children": [
@@ -127,7 +124,7 @@
                       "rightColumn": 13,
                       "isDefaultClickDisabled": true,
                       "widgetId": "1kascy5cjd",
-                      "isVisible": true,
+                      "isVisible": false,
                       "recaptchaType": "V3",
                       "version": 1,
                       "parentId": "04b4e2b4au",
@@ -722,7 +719,7 @@
                           "key": "onFilesSelected"
                         }
                       ],
-                      "leftColumn": 36,
+                      "leftColumn": 38,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -733,7 +730,7 @@
                       ],
                       "isDisabled": false,
                       "key": "kut12c9dbm",
-                      "onFilesSelected": "{{Upload_target.run(() =>{showAlert('Targets Updated Successfully','success');Fetch_Targets.run()}, () => showAlert('Targets Not Updated','error'))}}",
+                      "onFilesSelected": "{{Upload_target.run(() => showAlert('Targets Not Updated','error'), () => {})}}",
                       "isRequired": false,
                       "isDeprecated": false,
                       "rightColumn": 50,
@@ -978,7 +975,7 @@
               "rightColumn": 64,
               "widgetId": "jotqimdgo2",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "defaultTab": "{{appsmith.store.auth_token?\"Tab 1\": \"Tab 2\"}}",
+              "defaultTab": "Tab 1",
               "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
