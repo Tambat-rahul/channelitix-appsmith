@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://9110-2405-204-21ad-af0b-7a25-f81e-6f1-2261.ngrok.io"
+        "url": "https://c058-223-190-73-156.ngrok.io"
       },
       "invalids": [],
       "messages": [],
@@ -39,9 +39,6 @@
     "dynamicBindingPathList": [
       {
         "key": "path"
-      },
-      {
-        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
