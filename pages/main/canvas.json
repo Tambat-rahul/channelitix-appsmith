@@ -234,7 +234,7 @@
                       ],
                       "isDisabled": false,
                       "key": "kut12c9dbm",
-                      "onFilesSelected": "{{Upload_target.run(() =>{resetWidget(\"FilePicker1\",true);showAlert(\"Targets Updated Successfully\",'success');Fetch_Targets.run()}, () =>{resetWidget(\"FilePicker1\",true);showAlert(Upload_target.data.errors.message,'error')})}}",
+                      "onFilesSelected": "{{Upload_target.run(() =>{resetWidget(\"FilePicker1\",true);showAlert(\"Targets Updated Succesfully\",'success');Fetch_Targets.run()}, () =>{resetWidget(\"FilePicker1\",true);showAlert(Upload_target.data.errors.message,'error');Fetch_Targets.run();})}}",
                       "isRequired": false,
                       "isDeprecated": false,
                       "rightColumn": 52,
@@ -783,7 +783,7 @@
                           "discardButtonVariant": "TERTIARY",
                           "isSaveDisabled": "{{table.processedTableData.map((currentRow, currentIndex) => ( !table.updatedRowIndices.includes(currentIndex)))}}",
                           "isDiscardDisabled": "{{table.processedTableData.map((currentRow, currentIndex) => ( !table.updatedRowIndices.includes(currentIndex)))}}",
-                          "onSave": "{{Update_Record.run(() => {showAlert(\"Targets Updated Successfully\",\"success\");Fetch_Targets.run()}, () => showAlert(Update_Record.data.errors.message,'error'))}}",
+                          "onSave": "{{Update_Record.run(() => {showAlert('Records Updated Successfully','success');Fetch_Targets.run()}, () => {showAlert(Update_Record.data.errors.message,'error');})}}",
                           "onDiscard": ""
                         }
                       },
