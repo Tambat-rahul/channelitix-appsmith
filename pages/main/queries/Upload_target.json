@@ -18,7 +18,7 @@
     },
     "pageId": "main",
     "actionConfiguration": {
-      "timeoutInMillisecond": 200000,
+      "timeoutInMillisecond": 400000,
       "paginationType": "NONE",
       "path": "/api/v3/targets/",
       "headers": [

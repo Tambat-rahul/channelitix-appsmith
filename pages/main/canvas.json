@@ -223,7 +223,7 @@
                           "key": "onFilesSelected"
                         }
                       ],
-                      "leftColumn": 40,
+                      "leftColumn": 38,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
