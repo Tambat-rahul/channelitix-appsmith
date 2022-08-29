@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://cb28-223-190-73-156.ngrok.io"
+        "url": "https://1dd3-223-190-73-156.ngrok.io"
       },
       "invalids": [],
       "messages": [],
@@ -18,7 +18,7 @@
     },
     "pageId": "main",
     "actionConfiguration": {
-      "timeoutInMillisecond": 400000,
+      "timeoutInMillisecond": 300000,
       "paginationType": "NONE",
       "path": "/api/v3/targets/",
       "headers": [
