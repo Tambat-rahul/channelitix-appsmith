@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  let records = [];\n  let currentCount = 1000;\n  let idx = 0;\n  while (currentCount == 1000) {\n    let fetchedData = await Fetch_Targets.run({\n      limit: 1000,\n      offset: idx * 1000\n    });\n    currentCount = fetchedData.length;\n    idx++;\n    records = [...records, ...fetchedData];\n  }\n  const arr = [Object.keys(records[0])].concat(records);\n  const data = arr.map(it => {\n    return Object.values(it).toString();\n  }).join(\"\\n\");\n  download(data, 'data.xlsx', 'text/xlsx');\n}",
+      "body": "async () => {\n  let records = [];\n  let currentCount = 1000;\n  let idx = 0;\n  while (currentCount == 1000) {\n    let fetchedData = await Fetch_Targets.run({\n      limit: 1000,\n      offset: idx * 1000\n    });\n    currentCount = fetchedData.length;\n    idx++;\n    records = [...records, ...fetchedData];\n  }\n  const arr = [Object.keys(records[0])].concat(records);\n  const data = arr.map(it => {\n    return Object.values(it).toString();\n  }).join(\"\\n\");\n  download(data, 'data2.csv', 'text/csv');\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,10 +33,10 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  let records = [];\n  let currentCount = 1000;\n  let idx = 0;\n  while (currentCount == 1000) {\n    let fetchedData = await Fetch_Targets.run({\n      limit: 1000,\n      offset: idx * 1000\n    });\n    currentCount = fetchedData.length;\n    idx++;\n    records = [...records, ...fetchedData];\n  }\n  const arr = [Object.keys(records[0])].concat(records);\n  const data = arr.map(it => {\n    return Object.values(it).toString();\n  }).join(\"\\n\");\n  download(data, 'data.xlsx', 'text/xlsx');\n}"
+      "async () => {\n  let records = [];\n  let currentCount = 1000;\n  let idx = 0;\n  while (currentCount == 1000) {\n    let fetchedData = await Fetch_Targets.run({\n      limit: 1000,\n      offset: idx * 1000\n    });\n    currentCount = fetchedData.length;\n    idx++;\n    records = [...records, ...fetchedData];\n  }\n  const arr = [Object.keys(records[0])].concat(records);\n  const data = arr.map(it => {\n    return Object.values(it).toString();\n  }).join(\"\\n\");\n  download(data, 'data2.csv', 'text/csv');\n}"
     ],
     "userSetOnLoad": false,
-    "confirmBeforeExecute": true,
+    "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },

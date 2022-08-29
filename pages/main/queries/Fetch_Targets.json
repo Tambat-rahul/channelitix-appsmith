@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/api/v3/targets/{{moment(new Date(DatePicker1.formattedDate)).format('YYYYMM')}}",
+      "path": "/api/v3/targets/{{moment(new Date(datePicker.formattedDate)).format('YYYYMM')}}",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
@@ -45,7 +45,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "moment(new Date(DatePicker1.formattedDate)).format('YYYYMM')"
+      "moment(new Date(datePicker.formattedDate)).format('YYYYMM')"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

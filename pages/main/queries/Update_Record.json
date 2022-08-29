@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"month_year\": {{Table1.selectedRow.month_year}},\n\t\"headquarter_id\":{{Table1.selectedRow.headquarter_id}},\n\t\"product_id\": {{Table1.selectedRow.product_id}},\n\t\"target\": {{Table1.selectedRow.target}}\n}",
+      "body": "{\n\t\"month_year\": {{table.selectedRow.month_year}},\n\t\"headquarter_id\":{{table.selectedRow.headquarter_id}},\n\t\"product_id\": {{table.selectedRow.product_id}},\n\t\"target\": {{table.selectedRow.target}}\n}",
       "bodyFormData": [],
       "httpMethod": "PUT",
       "pluginSpecifiedTemplates": [
@@ -51,10 +51,10 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Table1.selectedRow.headquarter_id",
-      "Table1.selectedRow.month_year",
-      "Table1.selectedRow.product_id",
-      "Table1.selectedRow.target"
+      "table.selectedRow.headquarter_id",
+      "table.selectedRow.month_year",
+      "table.selectedRow.product_id",
+      "table.selectedRow.target"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
