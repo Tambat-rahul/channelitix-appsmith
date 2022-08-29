@@ -163,7 +163,7 @@
                           "key": "onDateSelected"
                         }
                       ],
-                      "leftColumn": 51,
+                      "leftColumn": 52,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -223,7 +223,7 @@
                           "key": "onFilesSelected"
                         }
                       ],
-                      "leftColumn": 38,
+                      "leftColumn": 40,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -237,7 +237,7 @@
                       "onFilesSelected": "{{Upload_target.run(() =>{resetWidget(\"FilePicker1\",true);showAlert(\"Targets Updated Successfully\",'success');Fetch_Targets.run()}, () =>{resetWidget(\"FilePicker1\",true);showAlert(Upload_target.data.errors.message,'error')})}}",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 51,
+                      "rightColumn": 52,
                       "isDefaultClickDisabled": true,
                       "widgetId": "su91wipjsh",
                       "isVisible": true,
