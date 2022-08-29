@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "downloadcsv",
+    "pageId": "main",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n  myVar1: [],\n  myVar2: {},\n  clearStore: () => {\n    storeValue(\"dataArray\", undefined);\n  },\n  savetoArray: async () => {\n    let dataArray = appsmith.store.dataArray || [];\n    dataArray.push(Fetch_Targets.data[0]);\n    storeValue(\"dataArray\", dataArray);\n    console.log(appsmith.store.dataArray);\n  },\n  convertToCSV() {\n    const arr = appsmith.store.dataArray;\n    const array = [Object.keys(arr[0])].concat(arr);\n    console.log(\n      array\n        .map((it) => {\n          return Object.values(it).toString();\n        })\n        .join(\"\\n\")\n    );\n  },\n\tfetchAllData: async () => {\n\t\tlet records = [];\n\t\tlet currentCount = 1000;\n\t\tlet idx = 0;\n\t\twhile (currentCount == 1000) {\n\t\t\tlet fetchedData = await Fetch_Targets.run({ limit: 1000, offset: idx * 1000 });\n\t\t\tcurrentCount = fetchedData.length;\n\t\t\tidx++;\n\t\t\trecords = [...records, ...fetchedData];\n\t\t}\n    const arr = [Object.keys(records[0])].concat(records);\n    const data = arr\n        .map((it) => {\n          return Object.values(it).toString();\n        })\n        .join(\"\\n\");\n\t\tdownload(data ,'data.xlsx','text/xlsx');\n\t}\n};",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  },
+  "id": "main_downloadcsv",
+  "deleted": false,
+  "gitSyncId": "62fa1f3184757e0c05541543_630c61b1c041e74aa53d28c7"
+}
