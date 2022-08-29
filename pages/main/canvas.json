@@ -234,7 +234,7 @@
                       ],
                       "isDisabled": false,
                       "key": "kut12c9dbm",
-                      "onFilesSelected": "{{Upload_target.run(() =>{showAlert(\"Targets Updated Successfully\",'success');resetWidget(\"FilePicker1\",true);Fetch_Targets.run()}, () =>{showAlert(Upload_target.data.errors.message,'error');resetWidget(\"FilePicker1\",true)})}}",
+                      "onFilesSelected": "{{Upload_target.run(() =>{resetWidget(\"FilePicker1\",true);showAlert(\"Targets Updated Successfully\",'success');Fetch_Targets.run()}, () =>{resetWidget(\"FilePicker1\",true);showAlert(Upload_target.data.errors.message,'error')})}}",
                       "isRequired": false,
                       "isDeprecated": false,
                       "rightColumn": 51,
