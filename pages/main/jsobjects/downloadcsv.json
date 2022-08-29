@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n  myVar1: [],\n  myVar2: {},\n\tfetchAllData: async () => {\n\t\tlet records = [];\n\t\tlet currentCount = 1000;\n\t\tlet idx = 0;\n\t\twhile (currentCount == 1000) {\n\t\t\tlet fetchedData = await Fetch_Targets.run({ limit: 1000, offset: idx * 1000 });\n\t\t\tcurrentCount = fetchedData.length;\n\t\t\tidx++;\n\t\t\trecords = [...records, ...fetchedData];\n\t\t}\n    const arr = [Object.keys(records[0])].concat(records);\n    const data = arr\n        .map((it) => {\n          return Object.values(it).toString();\n        })\n        .join(\"\\n\");\n\t\tdownload(data ,'data2.csv','text/csv');\n\t}\n};",
+    "body": "export default {\n  myVar1: [],\n  myVar2: {},\n\tfetchAllData: async () => {\n\t\tlet records = [];\n\t\tlet currentCount = 1000;\n\t\tlet idx = 0;\n\t\twhile (currentCount == 1000) {\n\t\t\tlet fetchedData = await Fetch_Targets.run();\n\t\t\tcurrentCount = fetchedData.length;\n\t\t\tidx++;\n\t\t\trecords = [...records, ...fetchedData];\n\t\t}\n    const arr = [Object.keys(records[0])].concat(records);\n    const data = arr\n        .map((it) => {\n          return Object.values(it).toString();\n        })\n        .join(\"\\n\");\n\t\tdownload(data ,\"AllData.xlsx\", \"data:text/xlsx\");\n\t}\n};",
     "variables": [
       {
         "name": "myVar1",
