@@ -18,7 +18,7 @@
     },
     "pageId": "main",
     "actionConfiguration": {
-      "timeoutInMillisecond": 50000,
+      "timeoutInMillisecond": 500000,
       "paginationType": "NONE",
       "path": "/api/v3/targets/",
       "headers": [
@@ -48,7 +48,9 @@
       }
     ],
     "isValid": true,
-    "invalids": [],
+    "invalids": [
+      "'Query timeout' field must be an integer between 0 and 60000"
+    ],
     "messages": [],
     "jsonPathKeys": [
       "table.selectedRow.headquarter_id",
