@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://a964-223-190-73-156.ngrok.io"
+        "url": "https://8682-182-48-235-69.ngrok.io"
       },
       "invalids": [],
       "messages": [],

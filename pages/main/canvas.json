@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 60,
+          "version": 63,
           "minHeight": 1292,
           "dynamicTriggerPathList": [],
           "parentColumnSpace": 1,
@@ -514,7 +514,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"zone\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "region": {
                           "allowCellWrapping": false,
@@ -540,7 +541,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"region\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "area": {
                           "allowCellWrapping": false,
@@ -566,7 +568,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"area\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "headquarter": {
                           "allowCellWrapping": false,
@@ -592,7 +595,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"headquarter\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "headquarter_id": {
                           "allowCellWrapping": false,
@@ -618,7 +622,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"headquarter_id\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "product_code": {
                           "allowCellWrapping": false,
@@ -644,7 +649,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"product_code\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "product": {
                           "allowCellWrapping": false,
@@ -670,7 +676,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"product\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "target": {
                           "allowCellWrapping": true,
@@ -697,7 +704,8 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"target\"]))}}",
                           "cellBackground": "",
-                          "onSubmit": ""
+                          "onSubmit": "",
+                          "validation": {}
                         },
                         "month_year": {
                           "allowCellWrapping": false,
@@ -723,7 +731,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"month_year\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "product_id": {
                           "allowCellWrapping": false,
@@ -749,7 +758,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"product_id\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "EditActions1": {
                           "allowCellWrapping": false,
@@ -784,7 +794,8 @@
                           "isSaveDisabled": "{{table.processedTableData.map((currentRow, currentIndex) => ( !table.updatedRowIndices.includes(currentIndex)))}}",
                           "isDiscardDisabled": "{{table.processedTableData.map((currentRow, currentIndex) => ( !table.updatedRowIndices.includes(currentIndex)))}}",
                           "onSave": "{{Update_Record.run(() => {showAlert('Records Updated Successfully','success');Fetch_Targets.run()}, () => {showAlert(Update_Record.data.errors.message,'error');})}}",
-                          "onDiscard": ""
+                          "onDiscard": "",
+                          "validation": {}
                         }
                       },
                       "key": "hdgx62po3i",

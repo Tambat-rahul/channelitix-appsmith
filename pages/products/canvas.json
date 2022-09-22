@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 60,
+          "version": 63,
           "minHeight": 490,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -251,7 +251,8 @@
                           "label": "status",
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
                           "labelColor": "#FFFFFF",
-                          "isEditable": false
+                          "isEditable": false,
+                          "validation": {}
                         },
                         "id": {
                           "allowCellWrapping": false,
@@ -277,7 +278,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "name": {
                           "allowCellWrapping": false,
@@ -303,7 +305,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "sub_name": {
                           "allowCellWrapping": false,
@@ -329,7 +332,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"sub_name\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "code": {
                           "allowCellWrapping": false,
@@ -355,7 +359,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"code\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "created_at": {
                           "allowCellWrapping": false,
@@ -381,7 +386,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_at\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "updated_at": {
                           "allowCellWrapping": false,
@@ -407,7 +413,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"updated_at\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "brand_id": {
                           "allowCellWrapping": false,
@@ -433,7 +440,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"brand_id\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "category": {
                           "allowCellWrapping": false,
@@ -459,7 +467,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"category\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "department_id": {
                           "allowCellWrapping": false,
@@ -485,7 +494,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"department_id\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "uoms": {
                           "allowCellWrapping": false,
@@ -511,7 +521,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"uoms\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "brands": {
                           "allowCellWrapping": false,
@@ -537,7 +548,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"brands\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         }
                       },
                       "key": "t7g28neup4",
