@@ -1125,7 +1125,7 @@
               "confirmBeforeExecute": true,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  var data = {};\n  var authToken = appsmith.URL.queryParams.authToken;\n  data = atob(authToken.split('.')[1]);\n  storeValue(\"data\", data);\n  console.log(data[\"org_code\"]);\n}"
+                "async () => {\n  var data = {};\n  var authToken = appsmith.URL.queryParams.authToken;\n  data = atob(authToken.split('.')[1]);\n  storeValue(\"data\", data);\n  console.log(typeof data);\n}"
               ],
               "timeoutInMillisecond": 10000
             }
