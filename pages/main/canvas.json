@@ -846,7 +846,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "{{appsmith.store.data}}",
+                      "text": "{{appsmith.store.data.user_id}}",
                       "key": "6t2js5q55e",
                       "isDeprecated": false,
                       "rightColumn": 20,
