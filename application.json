@@ -2,7 +2,7 @@
   "pages": [
     {
       "id": "main",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "products",
@@ -10,7 +10,7 @@
     },
     {
       "id": "home-page",
-      "isDefault": false
+      "isDefault": true
     }
   ],
   "viewMode": false,
