@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  var authToken = appsmith.URL.queryParams.authToken;\n  showAlert(authToken);\n}",
+      "body": "async () => {\n  var authToken = appsmith.URL.queryParams.authToken;\n  var data = atob(authToken.split('.')[1]);\n  showAlert(data);\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  var authToken = appsmith.URL.queryParams.authToken;\n  showAlert(authToken);\n}"
+      "async () => {\n  var authToken = appsmith.URL.queryParams.authToken;\n  var data = atob(authToken.split('.')[1]);\n  showAlert(data);\n}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": true,
