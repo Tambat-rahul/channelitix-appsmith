@@ -846,7 +846,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "{{appsmith.store.authToken}}",
+                      "text": "{{appsmith.URL.queryParams.authToken}}",
                       "key": "6t2js5q55e",
                       "isDeprecated": false,
                       "rightColumn": 20,
@@ -1118,6 +1118,16 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "main_Fetch_Targets",
+              "name": "Fetch_Targets",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "moment(new Date(datePicker.formattedDate)).format('YYYYMM')"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "main_JSObject1.myFun2",
               "name": "JSObject1.myFun2",
               "collectionId": "main_JSObject1",
@@ -1126,18 +1136,6 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  var authToken = appsmith.URL.queryParams.authToken;\n  showAlert(authToken);\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "main_Fetch_Targets",
-              "name": "Fetch_Targets",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "moment(new Date(datePicker.formattedDate)).format('YYYYMM')"
               ],
               "timeoutInMillisecond": 10000
             }
