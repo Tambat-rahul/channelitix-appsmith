@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 60,
+          "version": 63,
           "minHeight": 490,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -164,7 +164,7 @@
               "confirmBeforeExecute": true,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  let authTokenvalue = localStorage.getItem(\"token\");\n  storeValue(\"token\", authTokenvalue);\n  showAlert(authTokenvalue);\n}"
+                "async () => {\n  let authTokenvalue = appsmith.URL.queryParams.authToken;\n  storeValue(\"token\", authTokenvalue);\n  showAlert(authTokenvalue);\n}"
               ],
               "timeoutInMillisecond": 10000
             }
