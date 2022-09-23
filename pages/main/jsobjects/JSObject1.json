@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun2: async () => {\n\t\tvar data = {};\n\t\tvar authToken = appsmith.URL.queryParams.authToken;\n\t  data = JSON.parse(atob(authToken.split('.')[1]));\n\t\tstoreValue(\"data\",data);\n\t\tconsole.log(data.org_code);\n\t}\n}",
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun2: async () => {\n\t\tvar data = {};\n\t\tvar authToken = appsmith.URL.queryParams.authToken;\n\t  data = JSON.parse(atob(authToken.split('.')[1]));\n\t\tif(data.org_code == \"ICONTX\" ) {\n\t\t\tstoreValue(\"data\", \"cxapi\");\t\n\t\t}\n\t}\n}",
     "variables": [
       {
         "name": "myVar1",

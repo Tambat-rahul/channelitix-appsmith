@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://cxapi.channelitix.com"
+        "url": "https://{{appsmith.store.data}}.channelitix.com"
       },
       "invalids": [],
       "messages": [],
@@ -39,12 +39,16 @@
     "dynamicBindingPathList": [
       {
         "key": "path"
+      },
+      {
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "appsmith.store.data",
       "moment(new Date(datePicker.formattedDate)).format('YYYYMM')"
     ],
     "userSetOnLoad": false,
