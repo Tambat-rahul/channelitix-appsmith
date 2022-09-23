@@ -1118,16 +1118,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "main_Fetch_Targets",
-              "name": "Fetch_Targets",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "moment(new Date(datePicker.formattedDate)).format('YYYYMM')"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "main_JSObject1.myFun2",
               "name": "JSObject1.myFun2",
               "collectionId": "main_JSObject1",
@@ -1135,7 +1125,19 @@
               "confirmBeforeExecute": true,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  var authToken = appsmith.URL.queryParams.authToken;\n  var data = atob(authToken.split('.')[1]);\n  showAlert(data);\n}"
+                "async () => {\n  var authToken = appsmith.URL.queryParams.authToken;\n  var data = atob(authToken.split('.')[1]);\n  showAlert(data);\n  showAlert(data.role);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "main_Fetch_Targets",
+              "name": "Fetch_Targets",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "moment(new Date(datePicker.formattedDate)).format('YYYYMM')"
               ],
               "timeoutInMillisecond": 10000
             }
