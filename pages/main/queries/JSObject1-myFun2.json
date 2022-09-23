@@ -13,13 +13,13 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "home-page",
-    "collectionId": "home-page_JSObject1",
+    "pageId": "main",
+    "collectionId": "main_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  let authTokenvalue = appsmith.URL.queryParams.authToken;\n  storeValue(\"token\", authTokenvalue);\n}",
+      "body": "async () => {\n  var authToken = appsmith.URL.queryParams.authToken;\n  showAlert(authToken);\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  let authTokenvalue = appsmith.URL.queryParams.authToken;\n  storeValue(\"token\", authTokenvalue);\n}"
+      "async () => {\n  var authToken = appsmith.URL.queryParams.authToken;\n  showAlert(authToken);\n}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": true,
     "policies": [],
     "userPermissions": []
   },
-  "id": "home-page_JSObject1.myFun2",
+  "id": "main_JSObject1.myFun2",
   "deleted": false,
-  "gitSyncId": "62fa1f3184757e0c05541543_630b2db221b73754d5d90a8b"
+  "gitSyncId": "62fa1f3184757e0c05541543_632d9317b74f766452543d7a"
 }

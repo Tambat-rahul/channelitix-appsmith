@@ -1077,6 +1077,18 @@
                 "moment(new Date(datePicker.formattedDate)).format('YYYYMM')"
               ],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "main_JSObject1.myFun2",
+              "name": "JSObject1.myFun2",
+              "collectionId": "main_JSObject1",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": true,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  var authToken = appsmith.URL.queryParams.authToken;\n  showAlert(authToken);\n}"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ]
         ],
