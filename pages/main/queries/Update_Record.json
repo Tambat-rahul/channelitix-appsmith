@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://8682-182-48-235-69.ngrok.io"
+        "url": "https://cxapi.channelitix.com"
       },
       "invalids": [],
       "messages": [],
