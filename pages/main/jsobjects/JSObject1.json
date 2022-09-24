@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun2: async () => {\n\t\tvar deptCode = {\n\t\t\t\"ICONTX\" : \"tx\",\n\t\t\t\"ICONCX\" : \"cxapi\",\n\t\t\t\"CIPLA\" : \"chlapi\"\n\t\t};\n\t\tvar data = {}\n\t\t\n\t\tfunction getKeyByValue(object, value) {\n  \t\treturn Object.keys(object).find(key => object[key] === value);\n\t\t}\n\t\t\n\t\tvar authToken = appsmith.URL.queryParams.authToken;\n\t  data = JSON.parse(atob(authToken.split('.')[1]));\n\t\tshowAlert(data.org_code);\n\t\tvar main = (getKeyByValue(deptCode,data.org_code));\n\t\tstoreValue(main, \"main\");\n\t\tshowAlert(main);\n\t}\n}",
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun2: async () => {\n\t\tvar deptCode = {\n\t\t\t\"ICONTX\" : \"tx\",\n\t\t\t\"ICONCX\" : \"cxapi\",\n\t\t\t\"CIPLA\" : \"chlapi\"\n\t\t};\n\t\tvar data = {}\n\n\t\t\n\t\tvar authToken = appsmith.URL.queryParams.authToken;\n\t  data = JSON.parse(atob(authToken.split('.')[1]));\n\t\tshowAlert(data.org_code);\n\t}\n}",
     "variables": [
       {
         "name": "myVar1",
