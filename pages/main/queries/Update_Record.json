@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://cxapi.channelitix.com"
+        "url": "https://{{appsmith.store.main}}.channelitix.com"
       },
       "invalids": [],
       "messages": [],
@@ -53,6 +53,7 @@
     ],
     "messages": [],
     "jsonPathKeys": [
+      "appsmith.store.main",
       "table.selectedRow.headquarter_id",
       "table.selectedRow.month_year",
       "table.selectedRow.product_id",

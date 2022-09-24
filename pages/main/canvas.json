@@ -1137,8 +1137,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "appsmith.store.data",
-                "moment(new Date(datePicker.formattedDate)).format('YYYYMM')"
+                "moment(new Date(datePicker.formattedDate)).format('YYYYMM')",
+                "appsmith.store.main"
               ],
               "timeoutInMillisecond": 10000
             }
