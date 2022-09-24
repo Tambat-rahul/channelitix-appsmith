@@ -1118,17 +1118,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "main_Fetch_Targets",
-              "name": "Fetch_Targets",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.data",
-                "moment(new Date(datePicker.formattedDate)).format('YYYYMM')"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "main_JSObject1.myFun2",
               "name": "JSObject1.myFun2",
               "collectionId": "main_JSObject1",
@@ -1136,7 +1125,20 @@
               "confirmBeforeExecute": true,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  var deptCode = {\n    \"ICONTX\": \"tx\",\n    \"ICONCX\": \"cxapi\",\n    \"CIPLA\": \"chlapi\"\n  };\n  var data = {};\n  function getKeyByValue(object, value) {\n    return Object.keys(object).find(key => object[key] === value);\n  }\n  var authToken = appsmith.URL.queryParams.authToken;\n  data = JSON.parse(atob(authToken.split('.')[1]));\n  if (data.org_code == (data.org_code in deptCode)) {}\n  var main = getKeyByValue(deptCode, data.org_code);\n  storeValue(main, \"main\");\n}"
+                "async () => {\n  var deptCode = {\n    \"ICONTX\": \"tx\",\n    \"ICONCX\": \"cxapi\",\n    \"CIPLA\": \"chlapi\"\n  };\n  var data = {};\n  function getKeyByValue(object, value) {\n    return Object.keys(object).find(key => object[key] === value);\n  }\n  var authToken = appsmith.URL.queryParams.authToken;\n  data = JSON.parse(atob(authToken.split('.')[1]));\n  var main = getKeyByValue(deptCode, data.org_code);\n  storeValue(main, \"main\");\n  showAlert(main);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "main_Fetch_Targets",
+              "name": "Fetch_Targets",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.data",
+                "moment(new Date(datePicker.formattedDate)).format('YYYYMM')"
               ],
               "timeoutInMillisecond": 10000
             }

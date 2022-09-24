@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  var deptCode = {\n    \"ICONTX\": \"tx\",\n    \"ICONCX\": \"cxapi\",\n    \"CIPLA\": \"chlapi\"\n  };\n  var data = {};\n  function getKeyByValue(object, value) {\n    return Object.keys(object).find(key => object[key] === value);\n  }\n  var authToken = appsmith.URL.queryParams.authToken;\n  data = JSON.parse(atob(authToken.split('.')[1]));\n  if (data.org_code == (data.org_code in deptCode)) {}\n  var main = getKeyByValue(deptCode, data.org_code);\n  storeValue(main, \"main\");\n}",
+      "body": "async () => {\n  var deptCode = {\n    \"ICONTX\": \"tx\",\n    \"ICONCX\": \"cxapi\",\n    \"CIPLA\": \"chlapi\"\n  };\n  var data = {};\n  function getKeyByValue(object, value) {\n    return Object.keys(object).find(key => object[key] === value);\n  }\n  var authToken = appsmith.URL.queryParams.authToken;\n  data = JSON.parse(atob(authToken.split('.')[1]));\n  var main = getKeyByValue(deptCode, data.org_code);\n  storeValue(main, \"main\");\n  showAlert(main);\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  var deptCode = {\n    \"ICONTX\": \"tx\",\n    \"ICONCX\": \"cxapi\",\n    \"CIPLA\": \"chlapi\"\n  };\n  var data = {};\n  function getKeyByValue(object, value) {\n    return Object.keys(object).find(key => object[key] === value);\n  }\n  var authToken = appsmith.URL.queryParams.authToken;\n  data = JSON.parse(atob(authToken.split('.')[1]));\n  if (data.org_code == (data.org_code in deptCode)) {}\n  var main = getKeyByValue(deptCode, data.org_code);\n  storeValue(main, \"main\");\n}"
+      "async () => {\n  var deptCode = {\n    \"ICONTX\": \"tx\",\n    \"ICONCX\": \"cxapi\",\n    \"CIPLA\": \"chlapi\"\n  };\n  var data = {};\n  function getKeyByValue(object, value) {\n    return Object.keys(object).find(key => object[key] === value);\n  }\n  var authToken = appsmith.URL.queryParams.authToken;\n  data = JSON.parse(atob(authToken.split('.')[1]));\n  var main = getKeyByValue(deptCode, data.org_code);\n  storeValue(main, \"main\");\n  showAlert(main);\n}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": true,
