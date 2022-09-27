@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://{{appsmith.store.main}}.channelitix.com"
+        "url": "https://{{appsmith.store.data}}.channelitix.com"
       },
       "invalids": [],
       "messages": [],
@@ -48,7 +48,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.main",
+      "appsmith.store.data",
       "moment(new Date(datePicker.formattedDate)).format('YYYYMM')"
     ],
     "userSetOnLoad": false,

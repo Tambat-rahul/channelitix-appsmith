@@ -846,7 +846,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "{{appsmith.store.main}}",
+                      "text": "{{appsmith.store.data}}",
                       "key": "6t2js5q55e",
                       "isDeprecated": false,
                       "rightColumn": 20,
@@ -1118,17 +1118,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "main_Fetch_Targets",
-              "name": "Fetch_Targets",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "moment(new Date(datePicker.formattedDate)).format('YYYYMM')",
-                "appsmith.store.main"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "main_JSObject1.myFun2",
               "name": "JSObject1.myFun2",
               "collectionId": "main_JSObject1",
@@ -1137,6 +1126,19 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  var deptCode = {\n    \"ICONTX\": \"tx\",\n    \"ICONCX\": \"cxapi\",\n    \"CIPLA\": \"chlapi\"\n  };\n  var data = {};\n  var authToken = appsmith.URL.queryParams.authToken;\n  data = JSON.parse(atob(authToken.split('.')[1]));\n  var orgCode = data.org_code;\n  storeValue(deptCode[orgCode], \"main\");\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "main_Fetch_Targets",
+              "name": "Fetch_Targets",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.data",
+                "moment(new Date(datePicker.formattedDate)).format('YYYYMM')"
               ],
               "timeoutInMillisecond": 10000
             }
