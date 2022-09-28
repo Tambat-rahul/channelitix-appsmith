@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://{{appsmith.store.main}}.channelitix.com"
+        "url": "https://{{appsmith.URL.queryParams.team}}.channelitix.com"
       },
       "invalids": [],
       "messages": [],
@@ -63,7 +63,7 @@
     "messages": [],
     "jsonPathKeys": [
       "FilePicker1.files[0]",
-      "appsmith.store.main"
+      "appsmith.URL.queryParams.team"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
