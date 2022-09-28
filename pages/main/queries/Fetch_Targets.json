@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://{{appsmith.store.main}}.channelitix.com"
+        "url": "https://{{appsmith.URL.queryParams.team}}.channelitix.com"
       },
       "invalids": [],
       "messages": [],
@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/api/v3/targets/202209",
+      "path": "/api/v3/targets/{{moment(new Date(DatePicker1.formattedDate)).format('YYYYMM')}}",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
@@ -39,13 +39,17 @@
     "dynamicBindingPathList": [
       {
         "key": "path"
+      },
+      {
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.main"
+      "appsmith.URL.queryParams.team",
+      "moment(new Date(DatePicker1.formattedDate)).format('YYYYMM')"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

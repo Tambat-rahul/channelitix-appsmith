@@ -121,7 +121,7 @@
                       "isDisabled": false,
                       "key": "ijgmx0fdak",
                       "isDeprecated": false,
-                      "rightColumn": 3,
+                      "rightColumn": 2,
                       "isDefaultClickDisabled": true,
                       "widgetId": "1kascy5cjd",
                       "isVisible": false,
@@ -278,7 +278,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 21,
+                      "leftColumn": 13,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -291,7 +291,7 @@
                       "isDisabled": false,
                       "key": "c3t5i7jhfs",
                       "isDeprecated": false,
-                      "rightColumn": 34,
+                      "rightColumn": 26,
                       "isDefaultClickDisabled": true,
                       "widgetId": "2g078hjbie",
                       "isVisible": false,
@@ -832,7 +832,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 9.75,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 4,
+                      "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
                           "key": "fontFamily"
@@ -849,7 +849,7 @@
                       "text": "{{appsmith.store.main}}",
                       "key": "6t2js5q55e",
                       "isDeprecated": false,
-                      "rightColumn": 20,
+                      "rightColumn": 13,
                       "textAlign": "LEFT",
                       "widgetId": "kt5ybrm209",
                       "isVisible": true,
@@ -1123,7 +1123,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "appsmith.store.main"
+                "appsmith.URL.queryParams.team",
+                "moment(new Date(DatePicker1.formattedDate)).format('YYYYMM')"
               ],
               "timeoutInMillisecond": 10000
             },
