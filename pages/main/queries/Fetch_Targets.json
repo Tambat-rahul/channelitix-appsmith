@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://{{appsmith.store.data}}.channelitix.com"
+        "url": "https://{{appsmith.store.main}}.channelitix.com"
       },
       "invalids": [],
       "messages": [],
@@ -39,13 +39,16 @@
     "dynamicBindingPathList": [
       {
         "key": "path"
+      },
+      {
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.data"
+      "appsmith.store.main"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

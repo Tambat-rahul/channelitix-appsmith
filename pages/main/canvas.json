@@ -1123,7 +1123,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "appsmith.store.data"
+                "appsmith.store.main"
               ],
               "timeoutInMillisecond": 10000
             },
