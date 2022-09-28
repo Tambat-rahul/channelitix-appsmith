@@ -846,7 +846,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "{{appsmith.store.data}}",
+                      "text": "{{appsmith.store.main}}",
                       "key": "6t2js5q55e",
                       "isDeprecated": false,
                       "rightColumn": 20,
@@ -1122,7 +1122,9 @@
               "name": "Fetch_Targets",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "appsmith.store.main"
+              ],
               "timeoutInMillisecond": 10000
             },
             {
