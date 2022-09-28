@@ -1118,6 +1118,16 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "main_Fetch_Targets",
+              "name": "Fetch_Targets",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.data"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "main_JSObject1.myFun2",
               "name": "JSObject1.myFun2",
               "collectionId": "main_JSObject1",
@@ -1125,7 +1135,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  var deptCode = {\n    \"ICONTX\": \"tx\",\n    \"ICONCX\": \"cxapi\",\n    \"CIPLA\": \"chlapi\"\n  };\n  var data = {};\n  var authToken = appsmith.URL.queryParams.authToken;\n  data = JSON.parse(atob(authToken.split('.')[1]));\n  var orgCode = data.org_code;\n  storeValue(\"main\", deptCode[orgCode]);\n  setTimeout(() => {\n    Fetch_Targets.run();\n  }, 2000);\n}"
+                "async () => {\n  var deptCode = {\n    \"ICONTX\": \"tx\",\n    \"ICONCX\": \"cxapi\",\n    \"CIPLA\": \"chlapi\"\n  };\n  var data = {};\n  var authToken = appsmith.URL.queryParams.authToken;\n  data = JSON.parse(atob(authToken.split('.')[1]));\n  var orgCode = data.org_code;\n  storeValue(\"main\", deptCode[orgCode]);\n}"
               ],
               "timeoutInMillisecond": 10000
             }
