@@ -1125,7 +1125,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  var deptCode = {\n    \"ICONTX\": \"tx\",\n    \"ICONCX\": \"cxapi\",\n    \"CIPLA\": \"chlapi\"\n  };\n  var data = {};\n  var authToken = appsmith.URL.queryParams.authToken;\n  data = JSON.parse(atob(authToken.split('.')[1]));\n  var orgCode = data.org_code;\n  storeValue(\"main\", deptCode[orgCode]);\n  Fetch_Targets.run();\n}"
+                "async () => {\n  var deptCode = {\n    \"ICONTX\": \"tx\",\n    \"ICONCX\": \"cxapi\",\n    \"CIPLA\": \"chlapi\"\n  };\n  var data = {};\n  var authToken = appsmith.URL.queryParams.authToken;\n  data = JSON.parse(atob(authToken.split('.')[1]));\n  var orgCode = data.org_code;\n  storeValue(\"main\", deptCode[orgCode]);\n  setTimeout(() => {\n    Fetch_Targets.run();\n  }, 2000);\n}"
               ],
               "timeoutInMillisecond": 10000
             }
