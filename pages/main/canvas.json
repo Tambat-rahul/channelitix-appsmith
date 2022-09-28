@@ -1123,8 +1123,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "appsmith.URL.queryParams.team",
-                "moment(new Date(DatePicker1.formattedDate)).format('YYYYMM')"
+                "appsmith.URL.queryParams.team"
               ],
               "timeoutInMillisecond": 10000
             },

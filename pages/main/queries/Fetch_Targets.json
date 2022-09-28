@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/api/v3/targets/{{moment(new Date(DatePicker1.formattedDate)).format('YYYYMM')}}",
+      "path": "/api/v3/targets/202209",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
@@ -48,8 +48,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.URL.queryParams.team",
-      "moment(new Date(DatePicker1.formattedDate)).format('YYYYMM')"
+      "appsmith.URL.queryParams.team"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
