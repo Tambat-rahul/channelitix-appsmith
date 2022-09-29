@@ -41,7 +41,7 @@
         "key": "path"
       },
       {
-        "key": "datasourceUrl"
+        "key": "datasource.datasourceConfiguration.url"
       }
     ],
     "isValid": true,
