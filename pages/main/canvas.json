@@ -61,7 +61,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 570,
+                  "bottomRow": 600,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -107,7 +107,7 @@
                           "key": "onDateSelected"
                         }
                       ],
-                      "leftColumn": 52,
+                      "leftColumn": 50,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -170,7 +170,7 @@
                           "key": "onFilesSelected"
                         }
                       ],
-                      "leftColumn": 38,
+                      "leftColumn": 35,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -184,7 +184,7 @@
                       "onFilesSelected": "{{Upload_target.run(() =>{resetWidget(\"FilePicker1\",true);showAlert(\"Targets Updated Succesfully\",'success');Fetch_Targets.run()}, () =>{resetWidget(\"FilePicker1\",true);showAlert(Upload_target.data.errors.message,'error');Fetch_Targets.run();})}}",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 52,
+                      "rightColumn": 49,
                       "isDefaultClickDisabled": true,
                       "widgetId": "su91wipjsh",
                       "isVisible": true,
@@ -238,7 +238,7 @@
                       "isDisabled": false,
                       "key": "c3t5i7jhfs",
                       "isDeprecated": false,
-                      "rightColumn": 13,
+                      "rightColumn": 2,
                       "isDefaultClickDisabled": true,
                       "widgetId": "2g078hjbie",
                       "isVisible": false,
@@ -258,7 +258,7 @@
                       "multiRowSelection": false,
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 5,
+                      "topRow": 8,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
@@ -388,7 +388,7 @@
                         }
                       ],
                       "displayName": "Table",
-                      "bottomRow": 55,
+                      "bottomRow": 58,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
@@ -751,7 +751,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 9.75,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 18,
+                      "leftColumn": 13,
                       "dynamicBindingPathList": [
                         {
                           "key": "truncateButtonColor"
@@ -768,13 +768,13 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{moment(datePicker.selectedDate).valueOf()}}",
-                      "key": "56pocsz000",
+                      "text": "{{datePicker.selectedDate}}",
+                      "key": "sa0fr602ga",
                       "isDeprecated": false,
-                      "rightColumn": 34,
+                      "rightColumn": 29,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
-                      "widgetId": "izg6ke9tin",
+                      "widgetId": "herc0vcupf",
                       "isVisible": true,
                       "fontStyle": "BOLD",
                       "textColor": "#231F20",
@@ -782,10 +782,8 @@
                       "parentId": "04b4e2b4au",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 1,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 5,
                       "fontSize": "1rem",
                       "minDynamicHeight": 4
                     }
