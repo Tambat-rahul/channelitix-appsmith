@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://{{appsmith.URL.queryParams.team}}.channelitix.com"
+        "url": "https://txapi.channelitix.com"
       },
       "invalids": [],
       "messages": [],
@@ -26,6 +26,7 @@
       "queryParameters": [],
       "bodyFormData": [],
       "httpMethod": "GET",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -42,13 +43,15 @@
       },
       {
         "key": "datasource.datasourceConfiguration.url"
+      },
+      {
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.URL.queryParams.team",
       "moment(new Date(datePicker.formattedDate)).format('YYYYMM')"
     ],
     "userSetOnLoad": true,

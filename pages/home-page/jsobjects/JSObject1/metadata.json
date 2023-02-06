@@ -6,8 +6,8 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyFun2: async () => {\n\t\tlet authTokenvalue = appsmith.URL.queryParams.authToken;\n\t\tstoreValue(\"token\",authTokenvalue);\n\t\tnavigateTo(\"main\")\n\t}\n}",
-    "variables": []
+    "variables": [],
+    "userPermissions": []
   },
   "id": "home-page_JSObject1",
   "deleted": false,

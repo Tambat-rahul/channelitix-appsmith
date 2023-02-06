@@ -20,6 +20,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "async () => {\n  let records = [];\n  let currentCount = 1000;\n  let idx = 0;\n  while (currentCount == 1000) {\n    let fetchedData = await Fetch_Targets.run();\n    currentCount = fetchedData.length;\n    idx++;\n    records = [...records, ...fetchedData];\n  }\n  const arr = [Object.keys(records[0])].concat(records);\n  const data = arr.map(it => {\n    return Object.values(it).toString();\n  }).join(\"\\n\");\n  download(data, \"AllData.xlsx\", \"data:text/xlsx\");\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },

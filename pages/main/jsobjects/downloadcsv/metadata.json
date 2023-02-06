@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "downloadcsv",
+    "pageId": "main",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "main_downloadcsv",
+  "deleted": false,
+  "gitSyncId": "62fa1f3184757e0c05541543_630c61b1c041e74aa53d28c7"
+}

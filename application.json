@@ -18,6 +18,7 @@
   "unreadCommentThreads": 0,
   "color": "#D9E7FF",
   "icon": "rupee",
+  "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,
   "isManualUpdate": false,

@@ -6,8 +6,8 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tupdation: () => {\n\t\tFetch_Targets.run();\n\t\tshowAlert(\"Record Updated Successfully\",\"success\");\n\t}\n}",
-    "variables": []
+    "variables": [],
+    "userPermissions": []
   },
   "id": "main_updation_success",
   "deleted": false,

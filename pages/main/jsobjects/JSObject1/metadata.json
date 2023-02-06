@@ -6,7 +6,6 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun2: async () => {\n\t\tvar deptCode = {\n\t\t\t\"ICONTX\" : \"tx\",\n\t\t\t\"ICONCX\" : \"cxapi\",\n\t\t\t\"CIPLA\" : \"chlapi\"\n\t\t};\n\t\tvar data = {}\n\n\t\t\n\t\tvar authToken = appsmith.URL.queryParams.authToken;\n\t  data = JSON.parse(atob(authToken.split('.')[1]));\n\t\tvar orgCode = data.org_code;\n\t\tstoreValue(\"main\",deptCode[orgCode]);\n\t}\n}",
     "variables": [
       {
         "name": "myVar1",
@@ -16,7 +15,8 @@
         "name": "myVar2",
         "value": "{}"
       }
-    ]
+    ],
+    "userPermissions": []
   },
   "id": "main_JSObject1",
   "deleted": false,

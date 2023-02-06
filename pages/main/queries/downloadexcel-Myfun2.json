@@ -20,6 +20,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  const excelRows = Fetch_Targets.data;\n  const objArr = [];\n  const headers = excelRows[0].split(',');\n  for (let i = 1; i < excelRows.length; i++) {\n    const rowObj = {};\n    objArr.push(rowObj);\n    const rowArr = excelRows[i].split(',');\n    rowArr.forEach((val, index) => {\n      rowObj[headers[index]] = val;\n    });\n  }\n  download(objArr, \"AllData.xlsx\", \"data:text/xlsx\");\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },

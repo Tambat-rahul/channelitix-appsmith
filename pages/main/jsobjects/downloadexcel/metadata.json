@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "downloadexcel",
+    "pageId": "main",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "main_downloadexcel",
+  "deleted": false,
+  "gitSyncId": "62fa1f3184757e0c05541543_630c8363c041e74aa53d2d48"
+}
