@@ -761,7 +761,7 @@
                           "key": "text"
                         }
                       ],
-                      "text": "{{appsmith.URL.queryParams.team}}",
+                      "text": "{{moment(new Date(datePicker.formattedDate)).format('YYYYMM')}}",
                       "isDisabled": false,
                       "key": "t16ci76z3b",
                       "isDeprecated": false,
@@ -1048,7 +1048,9 @@
               "name": "Fetch_Targets",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "moment(newDate(datePicker.formattedDate)).format('YYYYMM')"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
