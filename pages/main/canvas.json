@@ -1048,9 +1048,7 @@
               "name": "Fetch_Targets",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [
-                "moment(new Date(datePicker.formattedDate)).format('YYYYMM')"
-              ],
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]
