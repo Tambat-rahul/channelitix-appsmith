@@ -761,7 +761,7 @@
                           "key": "text"
                         }
                       ],
-                      "text": "{{moment(datePicker.formattedDate)}}",
+                      "text": "{{moment(datePicker.selectedDate).format(\"YYYYMM\")}}",
                       "isDisabled": false,
                       "key": "t16ci76z3b",
                       "isDeprecated": false,
@@ -1049,7 +1049,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "moment(newDate(datePicker.formattedDate)).format('YYYYMM')"
+                "moment(new Date(datePicker.formattedDate)).format('YYYYMM')"
               ],
               "timeoutInMillisecond": 10000
             }
