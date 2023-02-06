@@ -761,11 +761,11 @@
                           "key": "text"
                         }
                       ],
-                      "text": "{{moment(new Date(datePicker.formattedDate)).format('YYYYMM')}}",
+                      "text": "{{moment(datePicker.formattedDate)}}",
                       "isDisabled": false,
                       "key": "t16ci76z3b",
                       "isDeprecated": false,
-                      "rightColumn": 32,
+                      "rightColumn": 37,
                       "isDefaultClickDisabled": true,
                       "widgetId": "umq5hr1sn5",
                       "isVisible": true,
