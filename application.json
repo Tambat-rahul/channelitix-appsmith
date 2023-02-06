@@ -21,6 +21,9 @@
   "unpublishedAppLayout": {
     "type": "FLUID"
   },
+  "publishedAppLayout": {
+    "type": "FLUID"
+  },
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,

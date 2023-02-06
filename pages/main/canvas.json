@@ -768,7 +768,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{moment(datePicker.selectedDate).format(\"YYYYMM\")}}",
+                      "text": "{{moment(datePicker.selectedDate).valueOf()}}",
                       "key": "56pocsz000",
                       "isDeprecated": false,
                       "rightColumn": 34,
