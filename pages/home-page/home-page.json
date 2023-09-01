@@ -1,0 +1,58 @@
+{
+  "unpublishedPage": {
+    "name": "home-page",
+    "slug": "home-page",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 470,
+          "containerStyle": "none",
+          "snapRows": 48,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 85,
+          "minHeight": 490,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "home-page_JSObject1.myFun2",
+              "name": "JSObject1.myFun2",
+              "collectionId": "home-page_JSObject1",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": true,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  let authTokenvalue = appsmith.URL.queryParams.authToken;\n  storeValue(\"token\", authTokenvalue);\n  navigateTo(\"main\");\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "home-page",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "62fa1f3184757e0c05541543_630b2d2cc041e74aa53d1644"
+}

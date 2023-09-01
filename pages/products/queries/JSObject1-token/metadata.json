@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "updation",
-    "fullyQualifiedName": "updation_success.updation",
+    "name": "token",
+    "fullyQualifiedName": "JSObject1.token",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,19 +13,17 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "main",
-    "collectionId": "main_updation_success",
+    "pageId": "products",
+    "collectionId": "products_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  Fetch_Targets.run();\n  showAlert(\"Record Updated Successfully\", \"success\");\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -34,15 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "() => {\n  Fetch_Targets.run();\n  showAlert(\"Record Updated Successfully\", \"success\");\n}"
-    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "main_updation_success.updation",
+  "id": "products_JSObject1.token",
   "deleted": false,
-  "gitSyncId": "62fa1f3184757e0c05541543_62fe098e84757e0c05553c33"
+  "gitSyncId": "62fa1f3184757e0c05541543_62fb5d0184757e0c055471d7"
 }

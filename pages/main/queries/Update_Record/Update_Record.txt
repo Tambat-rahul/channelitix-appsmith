@@ -1,0 +1,6 @@
+{
+	"month_year": {{table.selectedRow.month_year}},
+	"headquarter_id":{{table.selectedRow.headquarter_id}},
+	"product_id": {{table.selectedRow.product_id}},
+	"target": {{table.selectedRow.target}}
+}
